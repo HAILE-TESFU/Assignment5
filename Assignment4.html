@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title> assignment1</title>
+        <script>
+            function Numbers(){
+                let n=parseInt(document.getElementById("n").value);
+            
+                let OutPut=" ";
+                let Sum=0;
+                for(let i=1;i<n;i++){
+                if(i%2!=0){
+                    Sum+=i;
+                }
+                  
+                }
+                OutPut=Sum;
+
+                document.getElementById("out").innerHTML=OutPut;
+            }
+        </script>
+
+    </head>
+    
+    <h3>THE WORD</h3>
+    Number: <input type="text" id="n">
+    
+    <button type="button" onclick="Numbers()">Print</button>
+    <p id="out"></p>
+    <body> 
+
+    </body>
+</html>

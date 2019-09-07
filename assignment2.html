@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title> assignment1</title>
+        <script>
+            function Phrase(){
+                let n=parseInt(document.getElementById("n").value);
+                let Phrase=document.getElementById("p").value;
+                
+                let OutPut;
+               
+                for(let i=0;i<n;i++){
+                    OutPut+=Phrase+"<br>";
+                   
+                }
+
+                document.getElementById("out").innerHTML=OutPut;
+            }
+        </script>
+
+    </head>
+    
+    <h3>THE WORD</h3>
+    Number: <input type="text" id="n">
+    Phrase: <input type="text" id="p">
+    <button type="button" onclick="Phrase()">Print</button>
+    <p id="out"></p>
+    <body> 
+
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title> assignment1</title>
+        <script>
+            function MulTable(){
+                let n=parseInt(document.getElementById("n").value);
+                let a;
+            
+                let OutPut=" ";
+                let OutPut1=" ";
+                
+                for(let i=1;i<=12;i++){
+                    for(let j=1;j<=12;j++){
+
+                    a=i*j;
+                    OutPut1+=a;
+                    }
+                    OutPut=OutPut1+"<br>";
+                    
+                }
+                
+
+                document.getElementById("out").innerHTML=OutPut;
+            }
+        </script>
+
+    </head>
+    
+    <h3>THE WORD</h3>
+    Number: <input type="text" id="n">
+    
+    <button type="button" onclick="MulTable()">Print</button>
+    <p id="out"></p>
+    <body> 
+
+    </body>
+</html>

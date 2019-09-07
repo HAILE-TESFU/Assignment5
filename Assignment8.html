@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title> assignment1</title>
+        <script>
+            function GuesCodeGame(){
+              
+
+                let guess=parseInt(document.getElementById("m").value);
+                let Answer=38;
+                let OutPut=" ";
+               
+
+                do{
+                    if(guess<Answer){
+                        OutPut=guess+"guess is too emall.Please enter an other number";
+                    }
+                    else if(guess>Answer){
+                        OutPut=guess+"guess is too high.Please enter an other number";
+                    }
+                   
+                    }
+                    while(guess!=Answer){
+                        OutPut=guess+"guessis the correct answer";
+            
+                    }
+
+                    document.getElementById("out").innerHTML=OutPut;
+
+                }
+            
+                
+        </script>
+
+    </head>
+   
+    <body> 
+      <h3>THE WORD</h3>
+      Number: <input type="text" id="m">
+            
+      <button type="button" onclick="GuesCodeGame()">Print</button>
+      <p id="out"></p>
+
+    </body>
+</html>

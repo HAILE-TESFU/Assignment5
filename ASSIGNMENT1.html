@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title> assignment1</title>
+        <script>
+            function PrintOut(){
+                let n=parseInt(document.getElementById("n").value);
+                let OutPut=" ";
+                let i;
+                for(i=0;i<n;i++){
+                    OutPut+="Sunshine"+"<br>";
+                }
+
+                document.getElementById("out").innerHTML=OutPut;
+            }
+        </script>
+
+    </head>
+    
+    <h3>THE WORD</h3>
+    <input type="text" id="n">
+    <button type="button" onclick="PrintOut()">Print</button>
+    <p id="out"></p>
+    <body> 
+
+    </body>
+</html>

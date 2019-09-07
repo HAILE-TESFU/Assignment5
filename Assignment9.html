@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title> assignment1</title>
+        <script>
+            function Multiplication(){
+                let n=parseInt(document.getElementById("n").value);
+                
+                let OutPut=" ";
+                let a,b,c,d,e;
+                let Mul;
+                
+                
+                for(let i=1;i<=n;i++){
+                    a=i;
+                    b=2*i;
+                    c=3*i;
+                    d=i*i;
+                    e=i*i*i;
+                    OutPut+=a+" "+b+" "+c+" "+d+" "+e+"<br>";
+                }
+                
+
+                document.getElementById("out").innerHTML=OutPut;
+            }
+        </script>
+
+    </head>
+    
+    <h3>THE WORD</h3>
+    Number: <input type="text" id="n">
+    
+    <button type="button" onclick="Multiplication()">Print</button>
+    <p id="out"></p>
+    <body> 
+
+    </body>
+</html>

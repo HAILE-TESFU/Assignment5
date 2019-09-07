@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title> assignment1</title>
+        <script>
+            function Fibonachi(){
+                let n=parseInt(document.getElementById("n").value);
+                let Fib1=0;
+                let Fib2=1;
+                let Fib;
+            
+                let OutPut=" ";
+
+                for(let i=1;i<=n;i++){
+                    Fib=Fib1+Fib2;
+
+                    Fib1=Fib2;
+                    Fib2=Fib;
+                    
+
+                    OutPut+=Fib+"<br>";
+                   
+                   
+                }
+                
+
+                document.getElementById("out").innerHTML=OutPut;
+            }
+        </script>
+
+    </head>
+    
+    <h3>THE WORD</h3>
+    Number: <input type="text" id="n">
+    
+    <button type="button" onclick="Fibonachi()">Print</button>
+    <p id="out"></p>
+    <body> 
+
+    </body>
+</html>
